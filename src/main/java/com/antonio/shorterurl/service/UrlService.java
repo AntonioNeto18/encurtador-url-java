@@ -34,7 +34,7 @@ public class UrlService {
                     null,
                     request.url(),
                     getApiUrl() + generateShortCode(),
-                    LocalDateTime.now().plusMinutes(1)
+                    LocalDateTime.now().plusHours(1)
             );
         } while (repository.findByShortenUrl(url.getShortenUrl()).isPresent());
 
