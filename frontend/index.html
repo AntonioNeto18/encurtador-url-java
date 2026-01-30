@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encurtador de url</title>
+</head>
+
+<body class="container">
+
+    <section class="box">
+        <h1 class="title">
+            Encurtar url
+        </h1>
+        <form class="form">
+            <input class="form_input" id="input_form" type="text" placeholder="Cole sua url longa">
+            <button class="form_submit" id="sumbmit_button" onclick="encurtar(event)" type="submit">
+                Encurtar
+            </button>
+        </form>
+
+    </section>
+
+    <div class="shorten_url_div invisible" id="shorten_url_div">
+
+        <h2 class="subtitle">Url gerada - </h2>
+
+        <a class="shorten_url" id="shorten_url" target="_blank">
+            
+        </a>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
