@@ -16,6 +16,7 @@ Este projeto foi desenvolvido como parte dos meus estudos em Java com foco no de
 - Banco de dados H2 (em memória)
 - Lombok
 - Maven
+- Docker e docker compose (para rodar a aplicação)
 
 ---
 
@@ -41,16 +42,28 @@ Este projeto foi desenvolvido como parte dos meus estudos em Java com foco no de
 Siga estas instruções para obter uma cópia do projeto funcionando em sua máquina local.
 
 1. **Clone o repositório:**  
-    ```sh
-    git clone https://github.com/AntonioNeto18/encurtador-url-java.git
-    cd encurtador-url-java
-    ```
+```sh
+git clone https://github.com/AntonioNeto18/encurtador-url-java.git
+cd encurtador-url-java
+```
 
-2.  **Execute o projeto**
-    ```sh
-    mvn spring-boot:run
-    ```
-
-A API estará disponível em `http://localhost:8080`.
+2. **Rodando o backend:**
+Acesse a pasta backend
+```sh
+cd ./backend
+```
+    
+2.1 **Rodando sem Docker:**
+```sh
+mvnw spring-boot:run
+```
+    
+2.1 **Rodando com Docker:**
+```sh
+docker-compose up -d --build # Roda a aplicação
+docker-compose down # Para parar a aplicação
+```
+    
+A API estará disponível em `http://localhost:8080`, ou execute o arquivo `/frontend/index.html`.
 
 ---
